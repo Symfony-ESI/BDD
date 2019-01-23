@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mer. 23 jan. 2019 à 10:27
+-- Généré le :  mer. 23 jan. 2019 à 13:51
 -- Version du serveur :  5.7.21
 -- Version de PHP :  7.2.4
 
@@ -19,10 +19,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `SymfonyESI`
+-- Base de données :  `symfonyesi`
 --
-CREATE DATABASE IF NOT EXISTS `SymfonyESI` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `SymfonyESI`;
+CREATE DATABASE IF NOT EXISTS `symfonyesi` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `symfonyesi`;
 
 -- --------------------------------------------------------
 
@@ -120,6 +120,7 @@ CREATE TABLE IF NOT EXISTS `personnel` (
   `Num_Tel` varchar(10) NOT NULL,
   `Mail` varchar(30) NOT NULL,
   `Est_Intervenant` tinyint(1) NOT NULL,
+  `Mdp` varchar(100) NOT NULL,
   PRIMARY KEY (`ID_Personnel`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
